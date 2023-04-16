@@ -1,6 +1,17 @@
 <script>
+    import comic from '../components/comic.vue'
+    import comics from '../data/comics'
     export default {
         name: 'siteMain',
+        components: {
+            comic
+        },
+        data() {
+            return{
+                comics: comics
+            }
+            
+        }
     }
 </script>
 
@@ -8,8 +19,14 @@
 <template>
     <main>
         <div class="primary_section">
-            <div class="container d-flex align-items-center">
-                <h2>---------content here---------</h2>
+            <div class="container w-75">
+                <div class="row flex-wrap py-4">
+                    
+                    <comic v-for="comic in comics" :img="comic.thumb" :text="comic.series"/>
+                                          
+
+                </div>
+                
             </div>
         </div>
     

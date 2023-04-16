@@ -2,6 +2,8 @@
 import siteHeader from './components/siteHeader.vue'
 import siteMain from './components/siteMain.vue'
 import siteFooter from './components/siteFooter.vue'
+import comic from './components/comic.vue'
+
 
 
 export default {
@@ -9,7 +11,8 @@ export default {
   components: {
       siteHeader,
       siteMain,
-      siteFooter
+      siteFooter,
+      comic
     }
   }
 </script>

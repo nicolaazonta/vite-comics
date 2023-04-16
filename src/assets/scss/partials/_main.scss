@@ -17,4 +17,12 @@ main {
           padding: 0 .5rem;
       }
   }
+
+  & .primary_section {
+    background-color: #0282f983;
+    
+    & img {
+        aspect-ratio: 1;
+    }
+}
 }
